@@ -1,4 +1,5 @@
 #!/bin/sh -l
+export RUNNER_ALLOW_RUNASROOT="1"
 
 # Retrieve a short lived runner registration token using the PAT
 REGISTRATION_TOKEN="$(curl -X POST -fsSL \
